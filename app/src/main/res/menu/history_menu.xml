@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/speed"
+        android:title="Speed"
+        android:icon="@drawable/ic_speedometer"
+        app:showAsAction="always">
+
+        <menu xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:HTMLCode="http://schemas.android.com/apk/res-auto" >
+            <item android:id="@+id/slow"
+                android:title="Slow"
+                android:checkable="true"
+                android:iconTint="@color/skyblue"
+                HTMLCode:showAsAction="ifRoom|withText" />
+
+            <item android:id="@+id/normal"
+                android:title="Normal"
+                android:checkable="true"
+                android:iconTint="@color/skyblue"
+                android:checked="true"
+                HTMLCode:showAsAction="ifRoom|withText" />
+
+            <item android:id="@+id/fast"
+                android:title="Fast"
+                android:checkable="true"
+                android:iconTint="@color/skyblue"
+                HTMLCode:showAsAction="ifRoom|withText" />
+        </menu>
+
+    </item>
+
+    <item android:id="@+id/calendar"
+        android:title="Calendar"
+        android:icon="@drawable/ic_calendar_page_empty"
+        app:showAsAction="always"/>
+</menu>
